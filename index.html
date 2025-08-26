@@ -11,15 +11,39 @@
       flex-direction: row;
       align-items: flex-start;
     }
-    img {
-      height:auto;
-      vertical-align: top;
-      display: block;
+    .canvas{
+
     }
+    .row{
+      display: flex;
+      align-items: flex-start;
+    }
+   .column{
+    display: flex;
+    flex-direction: column;
+   }
+
+   img{
+    height: auto;
+   }
+   
   </style>
 </head>
 <body>
-  <img src="summary.svg" alt="game_board">
-  <img src="inspiration.svg" alt="Mood Board">
+  <div class="canvas">
+<!--ROW 1-->
+    <div class="row">
+      <img src="summary.svg" alt="game_board">
+    </div>
+
+<!--row 2-->
+    <div class="row">
+      <div class="column">
+        <img src="inspiration_one.svg">
+        <img src="inspiration_two.svg">
+      </div>
+    </div>
+
+  </div>
 </body>
 </html>
